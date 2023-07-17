@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop Up Message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button type="submit" class="btn" onclick="openPopop()">Submit</button>
+    <div class="popop" id="popop">
+      <img src="Check_icon.png">
+      <h2>Thank You!!</h2>
+      <p>Your details has been successfully submitted. Thanks!</p>
+      <button type="button" onclick="closePopop()">OK</button>
+    </div>
+  </div>
+
+  <script>
+    let popop = document.getElementById("popop");
+
+    function openPopop () {
+      popop.classList.add("open-popop");
+
+    }
+    function closePopop () {
+      popop.classList.remove("open-popop");
+
+    }
+
+  </script>
+</body>
+</html>
